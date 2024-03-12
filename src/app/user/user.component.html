@@ -1,1 +1,38 @@
-<p>Név: {{userData.name}}</p>
+<!-- <p>Név: {{userData.name}}</p> -->
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">{{userData.name}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="font-weight: bold;">ID</td>
+            <td>{{userData.id}}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">Felhasználónév</td>
+            <td>{{userData.username}}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">E-mail</td>
+            <td>{{userData.email}}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">Cím</td>
+            <td>{{userData.address.city}}, {{userData.address.street}}, {{userData.address.suite}}, {{userData.address.zipcode}}, {{userData.address.geo.lat}}, {{userData.address.geo.lng}}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">Telefonszám</td>
+            <td>{{userData.phone}}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">Weboldal</td>
+            <td>{{userData.website}}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">Cég</td>
+            <td>{{userData.company.name}}, {{userData.company.catchPhrase}}, {{userData.company.bs}}</td>
+        </tr>
+    </tbody>
+</table>
